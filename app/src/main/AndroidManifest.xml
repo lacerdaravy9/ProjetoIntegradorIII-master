@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoIntIII">
         <activity
+            android:name=".tela_imc"
+            android:exported="false" />
+        <activity
             android:name=".tela_agendamentos_2"
             android:exported="false" />
         <activity
