@@ -28,9 +28,13 @@
         android:id="@+id/imageView4"
         android:layout_width="136dp"
         android:layout_height="95dp"
-        app:srcCompat="@drawable/whatsapp_image_2021_10_04_at_11_50_44_removebg"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="1dp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whatsapp_image_2021_10_04_at_11_50_44_removebg" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout10"
@@ -144,11 +148,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="64dp"
         android:backgroundTint="#0B0B0B"
         android:text="Concluir Cadastro"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout15" />
+
+    <Switch
+        android:id="@+id/switch18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="8dp"
+        android:text="Homem"
+        app:layout_constraintEnd_toStartOf="@+id/switch21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout15" />
+
+    <Switch
+        android:id="@+id/switch21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="8dp"
+        android:text="Mulher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switch18"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout15" />
 </androidx.constraintlayout.widget.ConstraintLayout>
