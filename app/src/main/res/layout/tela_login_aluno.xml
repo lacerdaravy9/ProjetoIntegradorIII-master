@@ -70,6 +70,7 @@
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/black"
         android:text="Login"
+        android:onClick="starttela_agenda_de_treinos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
@@ -81,6 +82,7 @@
         android:layout_marginTop="16dp"
         android:backgroundTint="#070707"
         android:text="Cadastre-se"
+        android:onClick="starttela_cadastro_aluno"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
