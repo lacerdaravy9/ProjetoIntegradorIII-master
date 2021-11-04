@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoIntIII">
         <activity
+            android:name=".Tela_Grupo_D"
+            android:exported="false" />
+        <activity
+            android:name=".Tela_Grupo_C"
+            android:exported="false" />
+        <activity
+            android:name=".Tela_Grupo_B"
+            android:exported="false" />
+        <activity
             android:name=".Tela_Grupo_A"
             android:exported="false" />
         <activity
