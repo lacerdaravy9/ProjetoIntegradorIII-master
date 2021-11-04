@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ravy/AndroidStudioProjects/ProjetoIntegradorIII-master/app/src/main/res/layout/tela_login_aluno.xml" value="0.35833333333333334" />
+        <entry key="..\:/Users/ravy/AndroidStudioProjects/ProjetoIntegradorIII-master/app/src/main/res/layout/tela_login_professor.xml" value="0.2907608695652174" />
+        <entry key="..\:/Users/ravy/AndroidStudioProjects/ProjetoIntegradorIII-master/app/src/main/res/layout/tela_principal.xml" value="0.2907608695652174" />
         <entry key="..\:/Users/ravy/Downloads/ProjetoIntegradorIII-master/app/src/main/res/layout/activity_main.xml" value="0.36186594202898553" />
         <entry key="..\:/Users/ravy/Downloads/ProjetoIntegradorIII-master/app/src/main/res/layout/activity_main2.xml" value="0.36186594202898553" />
         <entry key="..\:/Users/ravy/Downloads/ProjetoIntegradorIII-master/app/src/main/res/layout/activity_main3.xml" value="0.36186594202898553" />
