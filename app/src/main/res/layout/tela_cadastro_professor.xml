@@ -152,6 +152,7 @@
         android:layout_marginEnd="64dp"
         android:backgroundTint="#0B0B0B"
         android:text="Concluir Cadastro"
+        android:onClick="starttela_login_professor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintStart_toStartOf="parent"

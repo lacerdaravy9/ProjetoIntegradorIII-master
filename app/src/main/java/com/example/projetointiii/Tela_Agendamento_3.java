@@ -6,15 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Tela_Grupo_A extends AppCompatActivity {
+public class Tela_Agendamento_3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tela_grupo_a);
+        setContentView(R.layout.tela_agendamento_3);
     }
-    public void startTela_Agendamento_3 (View view){
-        Intent Tela_Agendamento_3 = new Intent(this, Tela_Agendamento_3.class);
-        startActivity(Tela_Agendamento_3);
+    public void starttela_imc (View view){
+        Intent tela_imc = new Intent(this, tela_imc.class);
+        startActivity(tela_imc);
     }
 }

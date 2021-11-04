@@ -16,6 +16,7 @@
         android:layout_marginEnd="8dp"
         android:backgroundTint="#000000"
         android:text="Sábado"
+        android:onClick="starttela_de_agendamentos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button14" />
@@ -55,6 +56,7 @@
         android:layout_marginEnd="8dp"
         android:backgroundTint="#000000"
         android:text="Segunda - Feira"
+        android:onClick="starttela_de_agendamentos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -68,6 +70,7 @@
         android:layout_marginEnd="8dp"
         android:backgroundTint="#000000"
         android:text="Terça - Feira"
+        android:onClick="starttela_de_agendamentos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button10" />
@@ -81,6 +84,7 @@
         android:layout_marginEnd="8dp"
         android:backgroundTint="#000000"
         android:text="Quinta - Feira"
+        android:onClick="starttela_de_agendamentos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button20" />
@@ -94,6 +98,7 @@
         android:layout_marginEnd="24dp"
         android:backgroundTint="#000000"
         android:text="Sexta - Feira"
+        android:onClick="starttela_de_agendamentos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button13" />
@@ -107,6 +112,7 @@
         android:layout_marginEnd="8dp"
         android:backgroundTint="#000000"
         android:text="Quarta - Feira"
+        android:onClick="starttela_de_agendamentos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button11" />
