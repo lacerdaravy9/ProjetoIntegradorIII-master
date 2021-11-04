@@ -123,7 +123,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Informe sua Senha" />
+            android:hint="Informe sua Senha (Mín. 8 Characteres)" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -140,7 +140,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirme sua Senha" />
+            android:hint="Confirme sua Senha (Mín. 8 Characteres)" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
