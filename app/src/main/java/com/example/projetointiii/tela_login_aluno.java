@@ -40,4 +40,5 @@ public class tela_login_aluno extends AppCompatActivity {
         Intent tela_login_professor = new Intent(this, tela_login_professor.class);
         startActivity(tela_login_professor);
     }
+
 }

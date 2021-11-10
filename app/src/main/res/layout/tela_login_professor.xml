@@ -43,6 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextCref"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Digite o número do seu CREF"
@@ -94,6 +95,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#000000"
+        android:onClick="starttela_login_aluno"
         android:text="Cliente"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout16"
         app:layout_constraintStart_toStartOf="parent"
@@ -107,6 +109,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#000000"
+        android:onClick="starttela_login_professor"
         android:text="Personal"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout16"
         app:layout_constraintEnd_toEndOf="parent"
