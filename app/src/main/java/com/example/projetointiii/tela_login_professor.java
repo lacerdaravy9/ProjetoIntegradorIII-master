@@ -11,18 +11,11 @@ import com.github.rtoshiro.util.format.SimpleMaskFormatter;
 import com.github.rtoshiro.util.format.text.MaskTextWatcher;
 
 public class tela_login_professor extends AppCompatActivity {
-    private EditText TextCref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_login_professor);
-        TextCref = findViewById(R.id.TextCref);
-
-
-        SimpleMaskFormatter smf = new SimpleMaskFormatter("NNNNNN-N/NN");
-        MaskTextWatcher mtw = new MaskTextWatcher(TextCref, smf);
-        TextCref.addTextChangedListener(mtw);
     }
     public void starttela_agenda_de_treinos (View view){
         Intent tela_agenda_de_treinos = new Intent(this, tela_agenda_de_treinos.class);

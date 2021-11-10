@@ -34,7 +34,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:hint="Informe seu Nome" />
+            android:hint="Informe seu Nome"
+            android:inputType="text"
+            android:maxLength="80" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -50,9 +52,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextPeso01"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Informe seu Peso" />
+            android:hint="Informe seu Peso"
+            android:inputType="numberDecimal"
+            android:maxLength="3" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -67,9 +72,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextAltura01"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Informe sua Altura" />
+            android:hint="Informe sua Altura"
+            android:inputType="numberDecimal"
+            android:maxLength="4" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -86,7 +94,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:hint="Informe sua Idade" />
+            android:hint="Informe sua Idade"
+            android:inputType="numberDecimal"
+            android:maxLength="2" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -101,9 +111,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextCpf01"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Informe seu CPF" />
+            android:hint="Informe seu CPF"
+            android:inputType="numberDecimal"
+            android:maxLength="14" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -123,7 +136,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Informe sua Senha (Mín. 8 Characteres)"
+            android:hint="Informe sua Senha (Máx. 8 Characteres)"
+            android:maxLength="8"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -135,7 +149,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="148dp"
         android:layout_marginBottom="16dp"
-        android:text="Cadastro de Aluno"
+        android:text="Cadastro de Cliente"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
@@ -160,7 +174,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Confirme sua Senha (Mín. 8 Characteres)"
+            android:hint="Confirme sua Senha (Máx. 8 Characteres)"
+            android:maxLength="8"
             android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
