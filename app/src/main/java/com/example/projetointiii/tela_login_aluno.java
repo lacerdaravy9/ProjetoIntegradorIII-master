@@ -24,9 +24,9 @@ public class tela_login_aluno extends AppCompatActivity {
         MaskTextWatcher mtw = new MaskTextWatcher(editTextNumberDecimal, smf);
         editTextNumberDecimal.addTextChangedListener(mtw);
     }
-    public void starttela_agenda_de_treinos (View view){
-        Intent tela_agenda_de_treinos = new Intent(this, tela_agenda_de_treinos.class);
-        startActivity(tela_agenda_de_treinos);
+    public void starttela_perfil (View view){
+        Intent tela_perfil = new Intent(this, tela_perfil.class);
+        startActivity(tela_perfil);
     }
     public void starttela_cadastro_aluno (View view){
         Intent tela_cadastro_aluno = new Intent(this, tela_cadastro_aluno.class);

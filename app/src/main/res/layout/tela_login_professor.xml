@@ -82,7 +82,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="#040404"
-        android:onClick="starttela_agenda_de_treinos"
+        android:onClick="starttela_perfil_personal"
         android:text="LOGIN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

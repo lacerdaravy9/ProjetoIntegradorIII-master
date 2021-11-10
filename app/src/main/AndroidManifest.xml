@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoIntIII">
         <activity
+            android:name=".tela_perfil_personal"
+            android:exported="false" />
+        <activity
+            android:name=".tela_perfil_2"
+            android:exported="false" />
+        <activity
+            android:name=".tela_perfil"
+            android:exported="false" />
+        <activity
             android:name=".Tela_Agendamento_3"
             android:exported="false" />
         <activity

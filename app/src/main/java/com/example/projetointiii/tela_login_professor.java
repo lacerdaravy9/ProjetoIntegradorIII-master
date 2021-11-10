@@ -17,9 +17,9 @@ public class tela_login_professor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_login_professor);
     }
-    public void starttela_agenda_de_treinos (View view){
-        Intent tela_agenda_de_treinos = new Intent(this, tela_agenda_de_treinos.class);
-        startActivity(tela_agenda_de_treinos);
+    public void starttela_perfil_personal (View view){
+        Intent tela_perfil_personal = new Intent(this, tela_perfil_personal.class);
+        startActivity(tela_perfil_personal);
     }
     public void starttela_cadastro_professor (View view){
         Intent tela_cadastro_professor = new Intent(this, tela_cadastro_professor.class);
