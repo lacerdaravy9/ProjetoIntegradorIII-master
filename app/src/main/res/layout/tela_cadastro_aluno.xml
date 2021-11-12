@@ -32,6 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_nome"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:hint="Informe seu Nome"
@@ -52,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/TextPeso01"
+            android:id="@+id/edit_peso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Informe seu Peso"
@@ -72,7 +73,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/TextAltura01"
+            android:id="@+id/edit_altura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Informe sua Altura"
@@ -92,6 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_idade"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:hint="Informe sua Idade"
@@ -111,12 +113,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/TextCpf01"
+            android:id="@+id/edit_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Informe seu CPF"
-            android:inputType="numberDecimal"
-            android:maxLength="14" />
+            android:hint="Informe seu Email"
+            android:inputType="text|textEmailAddress"
+            android:maxLength="60" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -131,7 +133,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout7">
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/edit_senha"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -169,52 +171,30 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout8">
 
         <EditText
-            android:id="@+id/editTextTextPassword4"
+            android:id="@+id/edit_senha1"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:hint="Confirme sua Senha (Máx. 8 Characteres)"
             android:maxLength="8"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            tools:ignore="DuplicateIds" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/bt_cadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="153dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="153dp"
         android:backgroundTint="#070707"
-        android:text="Concluir Cadastro"
         android:onClick="starttela_login_aluno"
+        android:text="Concluir Cadastro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout9" />
 
-    <Switch
-        android:id="@+id/switch19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:text="Homem"
-        app:layout_constraintEnd_toStartOf="@+id/switch20"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout9" />
-
-    <Switch
-        android:id="@+id/switch20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:text="Mulher"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/switch19"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout9" />
 </androidx.constraintlayout.widget.ConstraintLayout>

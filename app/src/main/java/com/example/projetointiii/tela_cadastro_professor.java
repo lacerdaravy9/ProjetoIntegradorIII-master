@@ -11,18 +11,18 @@ import com.github.rtoshiro.util.format.SimpleMaskFormatter;
 import com.github.rtoshiro.util.format.text.MaskTextWatcher;
 
 public class tela_cadastro_professor extends AppCompatActivity {
-    private EditText editTextPhone;
+    private EditText edit_telefone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_cadastro_professor);
-        editTextPhone = findViewById(R.id.editTextPhone);
+        edit_telefone = findViewById(R.id.edit_telefone);
 
 
         SimpleMaskFormatter smf = new SimpleMaskFormatter("(NN)NNNNN-NNNN");
-        MaskTextWatcher mtw = new MaskTextWatcher(editTextPhone, smf);
-        editTextPhone.addTextChangedListener(mtw);
+        MaskTextWatcher mtw = new MaskTextWatcher(edit_telefone, smf);
+        edit_telefone.addTextChangedListener(mtw);
     }
     public void starttela_login_professor (View view){
         Intent tela_login_professor = new Intent(this, tela_login_professor.class);

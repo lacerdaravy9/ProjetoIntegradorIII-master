@@ -46,9 +46,9 @@
             android:id="@+id/TextCref"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Digite o número do seu CREF"
-            android:inputType="text"
-            android:maxLength="11" />
+            android:hint="Digite seu Email"
+            android:inputType="text|textEmailAddress"
+            android:maxLength="60" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -90,7 +90,7 @@
 
     <Button
         android:id="@+id/button18"
-        android:layout_width="170dp"
+        android:layout_width="165dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
@@ -104,7 +104,7 @@
 
     <Button
         android:id="@+id/button29"
-        android:layout_width="170dp"
+        android:layout_width="165dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"

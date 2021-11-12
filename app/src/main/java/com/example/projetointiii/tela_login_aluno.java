@@ -5,24 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 import com.github.rtoshiro.util.format.SimpleMaskFormatter;
 import com.github.rtoshiro.util.format.text.MaskTextWatcher;
 
 public class tela_login_aluno extends AppCompatActivity {
-    private EditText editTextNumberDecimal;
+    private EditText edit_email01, edit_senha03;
+    private Button bt_login, bt_cadastrar02;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_login_aluno);
-        editTextNumberDecimal = findViewById(R.id.editTextNumberDecimal);
-
-
-        SimpleMaskFormatter smf = new SimpleMaskFormatter("NNN.NNN.NNN-NN");
-        MaskTextWatcher mtw = new MaskTextWatcher(editTextNumberDecimal, smf);
-        editTextNumberDecimal.addTextChangedListener(mtw);
     }
     public void starttela_perfil (View view){
         Intent tela_perfil = new Intent(this, tela_perfil.class);
