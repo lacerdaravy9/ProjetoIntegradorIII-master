@@ -13,9 +13,6 @@
             android:name=".tela_perfil_personal"
             android:exported="false" />
         <activity
-            android:name=".tela_perfil_2"
-            android:exported="false" />
-        <activity
             android:name=".tela_perfil"
             android:exported="false" />
         <activity
