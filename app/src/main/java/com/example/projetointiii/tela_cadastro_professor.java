@@ -30,8 +30,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class tela_cadastro_professor extends AppCompatActivity {
-    private EditText edit_telefone;
-    private EditText edit_nome1, edit_idade1, edit_email1, getEdit_telefone, edit_senha01, edit_senha02;
+    private EditText edit_nome1, edit_idade1, edit_email1, edit_senha01, edit_senha02;
     private Button bt_cadastrar01;
     String[] mensagens = {"Preencha todos os campos", "Cadastro realizado com sucesso"};
     String personalID;
@@ -40,7 +39,6 @@ public class tela_cadastro_professor extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_cadastro_professor);
-        edit_telefone = findViewById(R.id.edit_telefone);
         IniciarComponentes();
 
         bt_cadastrar01.setOnClickListener(new View.OnClickListener() {
@@ -50,11 +48,10 @@ public class tela_cadastro_professor extends AppCompatActivity {
                 String nome1 = edit_nome1.getText().toString();
                 String idade1 = edit_idade1.getText().toString();
                 String email1 = edit_email1.getText().toString();
-                String telefone = edit_telefone.getText().toString();
                 String senha01 = edit_senha01.getText().toString();
                 String senha02 = edit_senha02.getText().toString();
 
-                if (nome1.isEmpty() || idade1.isEmpty() || email1.isEmpty() || telefone.isEmpty() || senha01.isEmpty() || senha02.isEmpty()){
+                if (nome1.isEmpty() || idade1.isEmpty() || email1.isEmpty() || senha01.isEmpty() || senha02.isEmpty()){
                     Snackbar snackbar = Snackbar.make(v,mensagens[0],Snackbar.LENGTH_SHORT);
                     snackbar.setBackgroundTint(Color.WHITE);
                     snackbar.setTextColor(Color.BLACK);
@@ -64,11 +61,6 @@ public class tela_cadastro_professor extends AppCompatActivity {
                 }
             }
         });
-
-
-        SimpleMaskFormatter smf = new SimpleMaskFormatter("(NN)NNNNN-NNNN");
-        MaskTextWatcher mtw = new MaskTextWatcher(edit_telefone, smf);
-        edit_telefone.addTextChangedListener(mtw);
     }
 
     private void CadastrarPersonal(View v) {
@@ -122,7 +114,6 @@ public class tela_cadastro_professor extends AppCompatActivity {
         String nome1 = edit_nome1.getText().toString();
         String idade1 = edit_idade1.getText().toString();
         String email1 = edit_email1.getText().toString();
-        String telefone = edit_telefone.getText().toString();
         String senha02 = edit_senha02.getText().toString();
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -131,7 +122,6 @@ public class tela_cadastro_professor extends AppCompatActivity {
         personais.put("nome",nome1);
         personais.put("idade",idade1);
         personais.put("email",email1);
-        personais.put("telefone",telefone);
         personais.put("senha02",senha02);
 
         personalID = FirebaseAuth.getInstance().getCurrentUser().getUid();
@@ -155,7 +145,6 @@ public class tela_cadastro_professor extends AppCompatActivity {
         edit_nome1 = findViewById(R.id.edit_nome1);
         edit_idade1 = findViewById(R.id.edit_idade1);
         edit_email1 = findViewById(R.id.edit_email);
-        edit_telefone = findViewById(R.id.edit_idade);
         edit_senha01 = findViewById(R.id.edit_senha01);
         edit_senha02 = findViewById(R.id.edit_senha02);
         bt_cadastrar01 = findViewById(R.id.bt_cadastrar01);
